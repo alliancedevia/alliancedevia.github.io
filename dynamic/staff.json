@@ -1,0 +1,247 @@
+{
+    "board_chairs": [
+        {
+            "name": "Chris Schmidt",
+            "role": "Fifth Third Bank; VP Group Manager Product Owner",
+            "headshot": "/images/board/chris.webp"
+        },
+        {
+            "name": "Ginny Walker",
+            "role": "GE Aviation: Senior Director of Engines Modernization",
+            "headshot": "/images/board/ginny.webp"
+        }
+    ],
+    "business_partners": [
+        {
+            "name": "Toddy Gandy",
+            "role": "Great American Insurance Divisional VP IT",
+            "headshot": "/images/board/todd_gandy.webp"
+        },
+        {
+            "name": "Kevin Feehan",
+            "role": "Director, HRIS, Procter & Gamble",
+            "headshot": "/images/lavender.png"
+        },
+        {
+            "name": "Rich Hill",
+            "role": "FIS Director of IT Architecture",
+            "headshot": "/images/board/rich_hill.webp"
+        },
+        {
+            "name": "Sean Kelley",
+            "role": "Partners for a Competitive Workforce Director of Talent Pipeline Initiative",
+            "headshot": "/images/board/sean_kelley.webp"
+        },
+        {
+            "name": "Geoff Smith",
+            "role": "  Cincinnati CIO Roundtable Co-chair ",
+            "headshot": "/images/board/geoff_smith.webp"
+        },
+        {
+            "name": "Mahendra Vora",
+            "role": "  Cincinnati CIO Roundtable Co-chair ",
+            "headshot": "/images/board/mahendra_vora.webp"
+        },
+        {
+            "name": "Joe Robinson",
+            "role": "  High Peaks Solutions CEO & Founder ",
+            "headshot": "/images/board/joe_robinson.webp"
+        },
+        {
+            "name": "Rob Rokey",
+            "role": "  UC Lindner College of Business MS IS Academic Director ",
+            "headshot": "/images/board/rob_rokey.webp"
+        },
+        {
+            "name": "Elijah Savage",
+            "role": "  The Kroger Company VP of Infrastructure ",
+            "headshot": "/images/lavender.png"
+        },
+        {
+            "name": "Alicia Sells",
+            "role": "  Ohio Valley Education Cooperative Director of Innovation ",
+            "headshot": "/images/board/alicia_sells.webp"
+        }
+    ],
+    "c_suite": [
+        {
+            "name": "Ariel Fader",
+            "role": "Chief Chapters Officer",
+            "headshot": "/images/ilc2324/ariel.png"
+        },
+        {
+            "name": "Ashlyn Bhatt",
+            "role": "Chief Operating Officer",
+            "headshot": "/images/ilc2324/ashlyn.png"
+
+        },
+        {
+            "name": "Ivy Bowman",
+            "role": "Chief Information Officer",
+            "headshot": "/images/ilc2324/Ivy.webp"
+
+        },
+        {
+            "name": "Megha Gaitonde",
+            "role": "Chief Finance Officer",
+            "headshot": "/images/ilc2324/Megha.webp"
+
+        },
+        {
+            "name": "Suhani Prakash",
+            "role": "Chief Marketing Officer",
+            "headshot": "/images/ilc2324/Suhani.webp"
+
+        },
+        {
+            "name": "Tejas Mundhe",
+            "role": "Chief Data Officer",
+            "headshot": "/images/ilc2324/tejas.webp"
+
+        }
+    ],
+    "programs": [
+        {
+            "name": "Jeff Zhu",
+            "role": "Programs Team",
+            "headshot": "/images/ilc2324/jeff.png"
+        },
+        {
+            "name": "Lillian Liu",
+            "role": "Programs Team",
+            "headshot": "/images/ilc2324/lillian.png"
+
+        },
+        {
+            "name": "Caleb Petros",
+            "role": "Programs Team",
+            "headshot": "/images/ilc2324/caleb.png"
+
+        },
+        {
+            "name": "Yvette Detweiler",
+            "role": "Programs Team",
+            "headshot": "/images/ilc2324/yvette.png"
+
+        },
+        {
+            "name": "Rishi Maguluri",
+            "role": "Programs Team",
+            "headshot": "/images/ilc2324/rishi.png"
+
+        },
+        {
+            "name": "Ezana Worku",
+            "role": "Programs Team",
+            "headshot": "/images/ilc2324/ezana.png"
+
+        }
+    ],
+    "marketing": [
+        {
+            "name": "Sara Nath",
+            "role": "Social Media Director",
+            "headshot": "/images/ilc2324/sara.png"
+        },
+        {
+            "name": "Erik Long",
+            "role": "Marketing Team",
+            "headshot": "/images/ilc2324/erik.png"
+
+        },
+        {
+            "name": "Robel Yoseph",
+            "role": "Marketing Team",
+            "headshot": "/images/ilc2324/robel.png"
+
+        },
+        {
+            "name": "Estelle Apewokin",
+            "role": "Marketing Team",
+            "headshot": "/images/ilc2324/estelle.png"
+
+        }
+    ],
+    "chapters": [
+        {
+            "name": "Eva Winchester",
+            "role": "Chapter Engagement Director",
+            "headshot": "/images/ilc2324/eva.png"
+        },
+        {
+            "name": "Shanthi Napier",
+            "role": "Chapters Team",
+            "headshot": "/images/ilc2324/shanthi.png"
+
+        },
+        {
+            "name": "Nyelle Graves",
+            "role": "Chapters Team",
+            "headshot": "/images/ilc2324/nyelle.png"
+
+        },
+        {
+            "name": "Abhisek Bhave",
+            "role": "Chapters Team",
+            "headshot": "/images/ilc2324/abhisek.png"
+
+        }
+    ],
+    "it": [
+        {
+            "name": "Aryan Vohra",
+            "role": "IT Team",
+            "headshot": "/images/ilc2324/aryan.png"
+
+        },
+        {
+            "name": "Luke Macenski",
+            "role": "IT Team",
+            "headshot": "/images/ilc2324/luke.png"
+
+        },
+        {
+            "name": "Saathvik Bondalapati",
+            "role": "IT Team",
+            "headshot": "/images/ilc2324/saathvik.png"
+
+        }
+    ],
+    "data": [
+        {
+            "name": "Ananya Jajoo",
+            "role": "Data Team",
+            "headshot": "/images/ilc2324/ananya.png"
+        },
+        {
+            "name": "Dhruv Kota",
+            "role": "Data Team",
+            "headshot": "/images/ilc2324/dhruv.png"
+
+        }
+    ],
+    "finance": [
+        {
+            "name": "Anya Mehta",
+            "role": "Finance Team",
+            "headshot": "/images/ilc2324/anya.png"
+        },
+        {
+            "name": "Noah Besera",
+            "role": "Finance Team",
+            "headshot": "/images/ilc2324/noah.png"
+
+        },
+        {
+            "name": "Rohan Parikh",
+            "role": "Finance Team",
+            "headshot": "/images/ilc2324/rohan.png"
+        },
+        {
+            "name": "Rahul Velu",
+            "role": "Finance Team",
+            "headshot": "/images/ilc2324/rahul.png"
+
+        }
+    ]
+}

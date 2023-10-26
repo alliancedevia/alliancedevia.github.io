@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+body, .header-link {
+    font-weight: 400;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.museo-header, .person-box h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+.rubrik, body, .header-link, .slide-button {
+    font-family: "Source Sans Pro", sans-serif;
+
+}
+
+header {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.dropdown-content a, .dropdown-content button, .white-button, .glide__arrows button, .glide__bullets button, .dropdown .dropbtn {
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+header div {
+    margin-right: 3px;
+}
+
+.header-link {
+    text-decoration: none;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+
+/*FOOTER*/
+
+.after::after {
+    width: 6px;
+    height: 24px;
+    border-radius: 5px;
+    display: inline-flex;
+    content: " ";
+    margin-left:10px;
+    margin-right: -6px;
+}
+
+.after {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+footer {
+    margin-top: 70px;
+    padding-bottom: .5em;
+    padding: 1em;
+}
+
+footer a.social {
+    font-size: 1.2rem;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-decoration: transparent;
+}
+
+
+/*CAROUSEL*/
+
+.slide {
+    min-height: 40%;
+    padding: 10px;
+    max-width: 120vh;
+}
+
+#dynamic-slides, .slide p {
+    height: 100%;
+}
+
+.glide__bullets, #page-header {
+    width: 100%;
+}
+
+.glide__arrows button {
+    background-color: transparent;
+}
+
+.glide__bullets button {
+    margin-top: .5em;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.slide-button {
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+    font-size: 19px;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 15px 15px 15px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slide h1 {
+    margin-top: 0;
+    padding-bottom: 0;
+    text-align: left;
+    margin-left: 1.7em;
+}
+
+.slide a {
+    text-decoration: none;
+}
+
+#our-section div.img, #our-section img {
+    height: 17em;
+    margin: 1em;
+    width: 1204px;
+    background-size: cover;
+}
+
+.margin-auto, #our-section, main {
+    margin: auto;
+}
+
+#our-section .padded {
+    padding: 3em;
+    padding-bottom: 0;
+}
+
+
+.center, .person-box {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.person-box {
+    border: solid;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    width: 13.1em;
+}
+.person-box img {
+    width: 100%;
+    height: 235px;
+    object-fit: cover;
+}
+.person-box p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/*FLEX*/
+.flex-wrap, .staff-section {
+    flex-wrap: wrap;
+}
+
+.flex-column, .glide__slide {
+    flex-direction: column;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+.flex-center, .glide__bullets, #carousel-internal, #insta-embed {
+    justify-content: center;
+}
+
+.flex, .button-row a, .two-column, #insta-embed, .staff-section, .glide__bullets, nav, header, #carousel-internal, .unskew, #header-internal h1, .button-row {
+    display: flex;
+}
+
+.no-bottom-margin, footer h3, #our-section div.img, #our-section img, .slide h1 {
+    margin-bottom: 0;
+}
+
+a[href=undefined] {
+    display: none;
+}
+
+nav {
+    overflow: hidden;
+}
+
+/*ABOUT US*/
+img.about-us {
+    width: 20em;
+    height: fit-content;
+}
+img.about-us.right, img.about-us.left {
+    padding-right: 1em;
+}
+img.about-us.top {
+    padding-top: 4em;
+}
+
+#footer-content {
+    align-items: end; 
+    justify-content: center;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.spacer, .dropdown, #header-internal h1, .glide__arrows {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+button.header-link {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.dropdown .dropbtn {
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+#page-header #header-internal {
+    width: max-content;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a, .dropdown-content button {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-right: 1em;
+    padding-left: 1em;
+    display: block;
+    text-align: left;
+    background-color: transparent;
+}
+
+footer .social:hover, footer p a:hover, .slide-button:hover {
+    transition: color .1s;
+}
+#page-header {
+    margin-bottom: 1em;
+}
+
+.button-row button {
+    transform: skew(14deg); 
+    margin: 0;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.button-row a {
+    transform: skew(-14deg);
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: center;
+    text-decoration: none;
+}
+
+a.three {
+    width: 32%;
+}
+a.four {
+    width: 22%;
+}
+
+.button-row {
+    justify-content: space-evenly;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.section-header {
+    font-size: 44px;
+}
+
+.section-header-2, footer h3, .slide h1 {
+    font-size: 2rem;
+}
+
+.section-header-3 {
+    font-size: 1.66rem;
+}
+
+.person-box h3 {
+    font-size: 1.5em;
+}
+
+#new-dark {
+    position:fixed; 
+    bottom:0; 
+    right:0; 
+    height: 7.5%; 
+    margin: 20px; 
+    cursor: pointer;
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+}
+
+body {
+    visibility: hidden;
+    opacity: 0;
+}

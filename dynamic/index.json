@@ -1,0 +1,114 @@
+{
+    "about_us": [
+        {
+            "title": "About Us",
+            "display": "mobile",
+            "href": "/about-us"
+        },
+        {
+            "title": "Board",
+            "display": "all",
+            "href": "/about-us/board"
+
+        },
+        {
+            "title": "Newsroom",
+            "display": "all",
+            "href": "/about-us/newsroom"
+
+        },
+        {
+            "title": "Connect",
+            "display": "all",
+            "href": "/about-us/connect"
+
+        },
+        {
+            "title": "Support",
+            "display": "all",
+            "href": "https://interalliance.networkforgood.com/projects/163950-general-donation-page"
+
+        },
+        {
+            "title": "Why Cincy?",
+            "display": "all",
+            "href": "https://www.cincinnatiexperience.com/"
+
+        },
+        {
+            "title": "Why NKY?",
+            "display": "all",
+            "href": "http://livability.com/northern-kentucky"
+
+        }
+    ],
+    "programs": [
+        {
+            "title": "Programs",
+            "display": "mobile",
+            "href": "/programs"
+        },
+        {
+            "title": "Upcoming Events",
+            "display": "all",
+            "href": "/programs/upcoming-events"
+
+        },
+        {
+            "title": "INTERnships",
+            "display": "all",
+            "href": "/programs/internships"
+
+        },
+        {
+            "title": "INTERalliance Leadership Council",
+            "display": "all",
+            "href": "/programs/ilc"
+
+        },
+        {
+            "title": "TechOlympics 2024",
+            "display": "all",
+            "href": "https://techolympics.org"
+
+        },
+        {
+            "title": "WiIT Cincy",
+            "display": "all",
+            "href": "https://wiitcincy.weebly.com/"
+
+        }
+    ],
+    "chapters": [
+        {
+            "title": "Chapters",
+            "display": "mobile",
+            "href": "/chapters"
+        },
+        {
+            "title": "Competitions",
+            "display": "all",
+            "href": "/chapters/competitions"
+
+        },
+        {
+            "title": "Management",
+            "display": "all",
+            "href": "/chapters/resources"
+
+        },
+        {
+            "title": "Showcase",
+            "display": "all",
+            "href": "https://techolympics.org/showcase-projects/"
+
+        },
+        {
+            "title": "Recognitions",
+            "display": "all",
+            "href": "/chapters/recognition"
+
+        }
+    ]
+    
+}

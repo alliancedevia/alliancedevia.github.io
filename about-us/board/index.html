@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="The INTERalliance of Greater Cincinnati is a non-profit organization dedicated to helping students explore the rich IT industry around Cincinnati. ">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="/css/ia.css">
+        <link rel="stylesheet" id="theme">
+        <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 885px)">
+        <link rel="stylesheet" href="/css/desktop.css" media="(min-width: 886px)">
+        <title>Board - INTERalliance of Greater Cincinnati</title>
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    </head>
+    <body>
+        <header>
+            <a id="home" aria-label="Homepage" href="/"><img src="/images/header.webp" alt=""></a>
+            <nav id="links"></nav>
+        </header>
+        <div id="page-header">
+            <div id="header-internal">
+                <h1 class="museo-header">Board Members</h1>
+            </div>
+        </div>
+        <main class="main">
+            <h2 class="museo-header section-header">Co-Chairs</h2>
+            <div id="cochairs" class="staff-section" style="justify-content: space-evenly;"></div>
+            <h2 class="museo-header section-header">Business Partners</h2>
+            <div id="businesspartners" class="staff-section"></div>
+            <h2 class="museo-header section-header">University Partners</h2>
+            <div id="universitypartners" class="staff-section"></div>
+            <h2 class="museo-header section-header">High School Partners</h2>
+            <div id="hspartners" class="staff-section"></div>
+        </main>
+        <footer>
+            <div id="footer-content" class="flex">
+                <h3 class="museo-header after">Join Us</h3>
+                <div id="footer-links">
+                    <a class="social after" target="_blank" aria-label="INTERalliance on Facebook" href="https://www.facebook.com/interalliancegc/"><i class="fa fa-facebook fa-2x social"></i></a>
+                    <a class="social after" target="_blank" aria-label="INTERalliance on Instagram" href="https://www.instagram.com/interalliancegc/"><i class="fa fa-instagram fa-2x social"></i></a>
+                    <a class="social after" target="_blank" aria-label="INTERalliance on Twitter" href="https://twitter.com/interalliancegc/"><i class="fa fa-twitter fa-2x social"></i></a>
+                    <a class="social after" target="_blank" aria-label="INTERalliance on LinkedIn" href="https://www.linkedin.com/company/the-interalliance-of-greater-cincinnati"><i class="fa fa-linkedin fa-2x social"></i></a>
+                </div>
+                <h3 id="central-office-email" class="museo-header">central.office@interalliance.org</h3>
+            </div>
+            <p class="center" id="copyright">Copyright © INTERalliance 2023 All Rights Reserved | Site developed by <a class="text" href="https://congodsted.com">Con Godsted</a> and maintained by the <a class="text" href="/programs/ilc">INTERalliance Leadership Council IT Team</a> | Based at 10290 Alliance Road, Cincinnati, OH</p>
+        </footer>
+        <script src="/js/index.js"></script>
+        <script src="/js/staff.js"></script>
+        <script>requestStaff("board")</script>
+
+    </body>
+</html>

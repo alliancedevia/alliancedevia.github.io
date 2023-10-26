@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="description" content="The INTERalliance of Greater Cincinnati is a non-profit organization dedicated to helping students explore the rich IT industry around Cincinnati. ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/css/ia.css">
+  <link rel="stylesheet" id="theme">
+  <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 885px)">
+  <link rel="stylesheet" href="/css/desktop.css" media="(min-width: 886px)">
+  <link rel="stylesheet" href="/css/calendar.css">
+  <title>Programs - INTERalliance of Greater Cincinnati</title>
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/glide.core.min.css">
+</head>
+<body>
+  <header>
+    <a id="home" aria-label="Homepage" href="/"><img src="/images/header.webp" alt=""></a>
+    <nav id="links"></nav>
+  </header>
+  <div id="page-header">
+    <div id="header-internal">
+        <h1 class="museo-header">Programs</h1>
+    </div>
+</div>
+  <main>
+    <div class="button-row">
+      <a class="three" href="/programs/ilc"><button class="museo-header">INTERalliance Leadership Council</button></a>
+      <a class="three" href="https://techolympics.org"><button class="museo-header">TechOlympics</button></a>
+      <a class="three" href="/programs/internships"><button class="museo-header">INTERnships</button></a>
+
+
+    </div>
+    <div class="main">
+      <div id='calendar'></div>
+    </div>
+  </main>
+  <footer>
+    <div id="footer-content" class="flex">
+      <h3 class="museo-header after">Join Us</h3>
+      <div id="footer-links">
+        <a class="social after" target="_blank" aria-label="INTERalliance on Facebook" href="https://www.facebook.com/interalliancegc/"><i class="fa fa-facebook fa-2x social"></i></a>
+        <a class="social after" target="_blank" aria-label="INTERalliance on Instagram" href="https://www.instagram.com/interalliancegc/"><i class="fa fa-instagram fa-2x social"></i></a>
+        <a class="social after" target="_blank" aria-label="INTERalliance on Twitter" href="https://twitter.com/interalliancegc/"><i class="fa fa-twitter fa-2x social"></i></a>
+        <a class="social after" target="_blank" aria-label="INTERalliance on LinkedIn" href="https://www.linkedin.com/company/the-interalliance-of-greater-cincinnati"><i class="fa fa-linkedin fa-2x social"></i></a>
+      </div>
+      <h3 id="central-office-email" class="museo-header">central.office@interalliance.org</h3>
+    </div>
+    <p class="center" id="copyright">Copyright © INTERalliance 2023 All Rights Reserved | Site developed by <a
+        class="text" href="https://congodsted.com">Con Godsted</a> and maintained by the <a class="text"
+        href="/programs/ilc">INTERalliance Leadership Council IT Team</a> | Based at 10290 Alliance Road, Cincinnati, OH
+    </p>
+  </footer>
+  <script src="/js/index.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
+  <script>
+    if (mode == "mobile") {
+      dayLength = "short"
+    }
+    else {
+      dayLength = "long"
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        dayHeaderFormat: { weekday: 'long' },
+        googleCalendarApiKey: 'AIzaSyDj-iG-BLbK8JsMuo6T68At6Sx_4C_u1Mk',
+        events: {
+          googleCalendarId: 'interalliance.org_u3k35rcvppifb6qufbolhmebdc@group.calendar.google.com'
+        },
+        initialView: 'dayGridMonth'
+      });
+      calendar.render();
+    });
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.5/index.global.min.js"></script>
+  <script>
+
+    /**
+     * Print the summary and start datetime/date of the next ten events in
+     * the authorized user's calendar. If no events are found an
+     * appropriate message is printed.
+     */
+    function listUpcomingEvents() {
+      var request = gapi.client.calendar.events.list({
+        'calendarId': 'primary',
+        'timeMin': (new Date()).toISOString(),
+        'showDeleted': false,
+        'singleEvents': true,
+        'maxResults': 10,
+        'orderBy': 'startTime'
+      });
+
+      request.execute(function (resp) {
+        var events = resp.items;
+        appendPre('Upcoming events:');
+
+        if (events.length > 0) {
+          for (i = 0; i < events.length; i++) {
+            var event = events[i];
+            var when = event.start.dateTime;
+            if (!when) {
+              when = event.start.date;
+            }
+            appendPre(event.summary + ' (' + when + ')')
+          }
+        } else {
+          appendPre('No upcoming events found.');
+        }
+
+      });
+    }
+  </script>
+</body>
+</html>

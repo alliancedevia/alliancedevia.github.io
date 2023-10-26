@@ -1,0 +1,141 @@
+/*SKEW TESTING*/
+div.fc-daygrid-event-harness{
+    margin-top: 0px;
+    transform: skew(-14deg);
+    margin-left: 4%;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+div.fc-daygrid-event-harness a.fc-event {
+    transform: skew(14deg);
+}
+
+
+.fc button.fc-today-button {
+    text-transform: lowercase !important;
+    margin-left: .5em;
+    opacity: 1 !important;
+}
+
+.fc-toolbar-chunk button {
+    border-radius: 5px !important;
+    padding: .2em .35em;
+    margin-right: 1em;
+    border: none !important;
+}
+.fc-prev-button {
+    margin-right: .5em !important;
+}
+
+/* MONTH EVENT STYLING */
+.fc-unthemed a.fc-day-grid-event, .fc-unthemed .fc-event {
+    border-radius: 0px;
+    width: 86%;
+    margin-left:2%;
+    }
+
+    
+.fc-time-grid-event.fc-event.fc-start.fc-end, .fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end {
+    border-width: 0px;
+}
+/* FONT COLOUR   */
+.fc-h-event .fc-event-main, .fc-event-title, .fc .fc-button-primary, .fc-today-button.fc-button.fc-button-primary, .fc-event-time {
+    color: #2B2725;
+    text-decoration-line: none !important;
+    font-weight: bold;
+
+}
+/* ACTIVE FORMAT BUTTON COLOR */
+.fc-toolbar.fc-header-toolbar button.fc-button.fc-button-primary.fc-button-active {
+    background: #D1CCE1;
+    border-radius: 0;
+}
+.fc-h-event {
+    border: none;
+}
+.fc-theme-standard td{
+    border-color: #AFA9CF;
+    border-width: 1.5px;
+}
+.fc .fc-scrollgrid {
+    border-top-color: #AFA9CF;
+    border-top-width: 1.5px;
+}
+
+.fc .fc-scrollgrid {
+    overflow: hidden;
+}
+th.fc-col-header-cell.fc-day {
+    border-right-color: transparent;
+}
+.fc-toolbar-title {
+    padding-right: 1em;
+    width: 9em;
+}
+/* BUTTON COLORATION */
+.fc-toolbar.fc-header-toolbar .fc-button:not(.fc-button-active), .fc-daygrid-event-harness {
+    background: #D1CCE1;
+    border-radius: 0;
+    color: #2B2725;
+}
+.fc-h-event, .fc-event:hover {
+    background-color: transparent;
+}
+
+.fc-daygrid-event-harness:hover, .fc-h-event:hover, .fc-toolbar.fc-header-toolbar .fc-button:hover {
+    background: #AFA9CF;
+}
+
+.fc-scrollgrid-section.fc-scrollgrid-section-body.fc-scrollgrid-section-liquid td[role=presentation] {
+    border-left: #AFA9CF solid 1px;
+}
+
+/* PHONE SCREEN */
+@media screen and (max-width:880px) {
+    .main {
+        width: unset;
+    }
+    .fc-view-harness {
+        height: 27em !important;
+    }
+    .fc-scroller {
+        overflow: hidden !important;
+    }
+    /* next/prev/today positioning */
+    .fc-left {
+        position:absolute;
+        width:136px;
+        right:-1px;
+        top:-10px;
+    }
+    /* Next/prev/today button sizing */
+    .fc-toolbar button {
+        align-items: center !important;
+        margin-left: 5px;
+        margin-bottom:4px !important;
+        padding: 5px !important;
+    }
+    /* month name */
+    .fc-toolbar h2 {
+        width: 60% !important;
+        text-align:center !important;
+        top:-10px;
+        left:-7px;
+    }
+    /* day/week/month/list buttons */
+    .fc-right {
+        display:none;
+    }
+    /* calendar */
+    .fc-scroller.fc-day-grid-container {
+        height: 100% !important;
+        overflow: visible !important;
+    }
+    /*POPUP*/
+    .elementor-element.elementor-element-f5c8bda .eaelec-modal .eaelec-modal-content {
+        height: 100%;
+        max-width: 100%;
+    }
+}
+
+

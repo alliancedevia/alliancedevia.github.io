@@ -1,0 +1,103 @@
+body {
+    font-size: 18px;
+}
+
+main {
+    line-height: 1.6em;
+}
+
+.header-link {
+    font-size: 1em;
+
+}
+
+.font36 {
+    font-size: 36px;
+}
+
+#header-internal h1 {
+    font-size: 3em;
+    padding: .5em;
+}
+
+#page-header #header-internal {
+    margin-left: 3em;
+}
+
+#home img  {
+    width: auto;
+}
+
+.two-column div, .two-column img {
+    width: 50%;
+    height: fit-content;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+details summary::-webkit-details-marker {
+    display:none;
+}
+details > summary {display:block}
+
+#our-vision {
+    flex-direction: row-reverse;
+}
+
+#our-vision div, #our-mission div {
+    width: 50% !important;
+}
+
+.slide, .skew, #header-internal {
+    transform: skew(-14deg); 
+}
+.slide p {
+    margin-top: .3em;
+    margin-left: 3.1em;
+    margin-right: 3em;
+}
+
+.unskew, #header-internal h1 {
+    transform: skew(14deg);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    padding-top: .23em;
+}
+
+header img, #home {
+    height: 60px;
+}
+.display-mobile {
+    display: none !important;
+}
+
+#copyright {
+    font-size: .8em;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5em;
+}
+
+.header-link.white-button {
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+
+.main {
+    padding: 8px;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.button-row button {
+    font-size: 22px;
+    text-align: center;
+}
+
