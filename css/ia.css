@@ -1,29 +1,122 @@
+/* FONTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
-body, .header-link {
-    font-weight: 400;
+
+
+/*INVENTED LAVENDER */
+
+.dropdown-content a:hover, .dropdown-content button:hover {
+    background-color: var(--lavenderhover);
+}
+
+/*LIGHT LAVENDER */
+
+header, footer, .dropdown-content a, #page-header #header-internal, .slide, .button-row a {
+    background-color: var(--lavender);
+}
+
+
+/*DARK LAVENDER */
+#page-header, #carousel, .button-row {
+    background-color: var(--darklavender);
+
+}
+.glide__bullets button {
+    color: var(--darklavender);
+}
+
+.dropdown-content a, #page-header #header-internal {
+    border-top: var(--darklavender) solid 1px;
+}
+
+/* WHITE */
+.slide-button {
+    border-color: var(--white);
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    margin: 0;
+    overflow-x: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.glide__bullet--active {
+    color: var(--white) !important;
+}
+
+.spacer {
+    color: var(--white);
+}
+.after::after {
+    background: var(--darklavender);
+}
+
+.white-button {
+    background-color: var(--white);
+}
+
+/*BLACK*/
+.museo-header, .button-row a, .dropdown-content a, .dropdown-content button, .text, .header-link, footer .social, .slide-button, .glide__arrows button {
+    color: var(--black);
+}
+
+/* PURPLE */
+footer .social:hover, footer p a:hover {
+    color: var(--purple)
+}
+
+.slide-button:hover {
+    border-color: var(--purple)
+}
+
+
+/*GREEN*/
+.glide__bullet--active, footer .social:hover, footer p a:hover {
+    color: var(--strong) !important;
+}
+
+
+@media screen and (max-width: 885px) {
+    header img {
+        background-color: var(--lavender);   
+        
+    }
+    nav {
+        background-color: var(--lavender);
+    
+    }
+    
+}
+
+
+.header-link {
     margin: 0;
     overflow-x: hidden;
 }
 
-.museo-header, .person-box h3 {
+details summary::-webkit-details-marker,
+details summary::marker {
+ display: none; 
+ content: "";
+}
+
+.museo-header, h1, h2, .person-box h3 {
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
 }
 .rubrik, body, .header-link, .slide-button {
     font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
 
 }
 
-header {
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
+/* UNIVERSAL */
 
-.dropdown-content a, .dropdown-content button, .white-button, .glide__arrows button, .glide__bullets button, .dropdown .dropbtn {
+.dropdown-content button, .white-button, .glide__arrows button, .glide__bullets button, .dropdown .dropbtn {
     border: none;
 }
 
@@ -31,6 +124,31 @@ button {
     padding: 10px 20px;
     margin: 0;
     cursor: pointer;
+}
+
+.center, .person-box {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+#dynamic-slides, .slide p {
+    height: 100%;
+}
+
+.glide__bullets, #page-header, header {
+    width: 100%;
+}
+
+
+/* HEADER */
+
+header {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
 }
 
 header div {
@@ -43,8 +161,31 @@ header div {
     padding-left: 6px;
 }
 
+#page-header, header {
+    margin-bottom: 1em;
+}
 
-/*FOOTER*/
+
+/* PERSON BOXES */
+.person-box h3 {
+    font-size: 1.5em;
+}
+
+/*FONT SIZES*/
+.section-header {
+    font-size: 44px;
+}
+
+.section-header-2, footer h3, .slide h1 {
+    font-size: 2rem;
+}
+
+.section-header-3 {
+    font-size: 1.66rem;
+}
+
+
+/* FOOTER */
 
 .after::after {
     width: 6px;
@@ -68,27 +209,18 @@ footer {
 }
 
 footer a.social {
-    font-size: 1.2rem;
     padding-left: 6px;
     padding-right: 6px;
     text-decoration: transparent;
 }
 
 
-/*CAROUSEL*/
+/* CAROUSEL */
 
 .slide {
     min-height: 40%;
     padding: 10px;
     max-width: 120vh;
-}
-
-#dynamic-slides, .slide p {
-    height: 100%;
-}
-
-.glide__bullets, #page-header {
-    width: 100%;
 }
 
 .glide__arrows button {
@@ -105,7 +237,6 @@ footer a.social {
     border-style: solid;
     border-width: 1px;
     background-color: transparent;
-    font-size: 19px;
     font-weight: 300;
     text-decoration: none;
     padding: 15px 15px 15px 15px;
@@ -139,32 +270,6 @@ footer a.social {
     padding-bottom: 0;
 }
 
-
-.center, .person-box {
-    text-align: center;
-}
-
-.right-align {
-    text-align: right;
-}
-
-.person-box {
-    border: solid;
-    margin-right: 2em;
-    margin-bottom: 2em;
-    width: 13.1em;
-}
-.person-box img {
-    width: 100%;
-    height: 235px;
-    object-fit: cover;
-}
-.person-box p {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-
 /*FLEX*/
 .flex-wrap, .staff-section {
     flex-wrap: wrap;
@@ -181,7 +286,7 @@ footer a.social {
     justify-content: center;
 }
 
-.flex, .button-row a, .two-column, #insta-embed, .staff-section, .glide__bullets, nav, header, #carousel-internal, .unskew, #header-internal h1, .button-row {
+.flex, .button-row a, .two-column, #insta-embed, .staff-section, .glide__bullets, nav, header, #carousel-internal, .unskew, .button-row {
     display: flex;
 }
 
@@ -219,9 +324,16 @@ img.about-us.top {
     overflow: hidden;
 }
 
-.spacer, .dropdown, #header-internal h1, .glide__arrows {
+.spacer, .dropdown, .glide__arrows {
     margin-top: auto;
     margin-bottom: auto;
+}
+
+#header-internal h1 {
+    line-height: normal;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
 }
 
 button.header-link {
@@ -235,10 +347,6 @@ button.header-link {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-}
-
-#page-header #header-internal {
-    width: max-content;
 }
 
 .dropdown-content {
@@ -257,14 +365,10 @@ button.header-link {
     padding-left: 1em;
     display: block;
     text-align: left;
-    background-color: transparent;
 }
 
 footer .social:hover, footer p a:hover, .slide-button:hover {
     transition: color .1s;
-}
-#page-header {
-    margin-bottom: 1em;
 }
 
 .button-row button {
@@ -296,22 +400,6 @@ a.four {
     margin-bottom: .5em;
 }
 
-.section-header {
-    font-size: 44px;
-}
-
-.section-header-2, footer h3, .slide h1 {
-    font-size: 2rem;
-}
-
-.section-header-3 {
-    font-size: 1.66rem;
-}
-
-.person-box h3 {
-    font-size: 1.5em;
-}
-
 #new-dark {
     position:fixed; 
     bottom:0; 
@@ -323,7 +411,3 @@ a.four {
     border-radius: 50%;
 }
 
-body {
-    visibility: hidden;
-    opacity: 0;
-}

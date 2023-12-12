@@ -1,31 +1,22 @@
+/* UNIVERSAL */
 body {
     font-size: 18px;
+}
+
+.dropdown-content :first-child {
+    display: none !important;
 }
 
 main {
     line-height: 1.6em;
 }
 
-.header-link {
-    font-size: 1em;
-
+.space-down {
+    margin-bottom: 7em !important;
 }
 
 .font36 {
     font-size: 36px;
-}
-
-#header-internal h1 {
-    font-size: 3em;
-    padding: .5em;
-}
-
-#page-header #header-internal {
-    margin-left: 3em;
-}
-
-#home img  {
-    width: auto;
 }
 
 .two-column div, .two-column img {
@@ -35,60 +26,9 @@ main {
     margin-right: 1em;
 }
 
-details summary::-webkit-details-marker {
-    display:none;
-}
-details > summary {display:block}
-
-#our-vision {
-    flex-direction: row-reverse;
-}
-
-#our-vision div, #our-mission div {
-    width: 50% !important;
-}
-
-.slide, .skew, #header-internal {
-    transform: skew(-14deg); 
-}
-.slide p {
-    margin-top: .3em;
-    margin-left: 3.1em;
-    margin-right: 3em;
-}
-
-.unskew, #header-internal h1 {
-    transform: skew(14deg);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content {
-    padding-top: .23em;
-}
-
-header img, #home {
-    height: 60px;
-}
 .display-mobile {
     display: none !important;
 }
-
-#copyright {
-    font-size: .8em;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5em;
-}
-
-.header-link.white-button {
-    margin: 0.5em;
-    padding: 0.5em;
-}
-
 
 .main {
     padding: 8px;
@@ -100,4 +40,120 @@ header img, #home {
     font-size: 22px;
     text-align: center;
 }
+
+
+/* HEADER */
+.header-link {
+    font-size: 1em;
+}
+
+#header-internal h1 {
+    font-size: 3em;
+    padding: .5em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+#page-header #header-internal {
+    margin-left: 3em;
+}
+
+#home img  {
+    width: auto;
+}
+
+header img, #home {
+    height: 60px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    padding-top: .23em;
+}
+
+.header-link.white-button {
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+/* PERSON BOXES */
+.person-box {
+    border: solid;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    width: 13em;
+}
+
+.person-box img {
+    width: 100%;
+    height: 13em;
+    object-fit: cover;
+    object-position: center;
+}
+
+.person-box p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* OUR MISSION/OUR VISION */
+#our-vision {
+    flex-direction: row-reverse;
+}
+
+#our-vision div, #our-mission div {
+    width: 50% !important;
+}
+
+/* CAROUSEL */
+.slide, .skew, #header-internal {
+    transform: skew(-14deg); 
+}
+
+.unskew, #header-internal h1 {
+    transform: skew(14deg);
+}
+
+.slide p {
+    margin-top: .3em;
+    margin-left: 3.1em;
+    margin-right: 3em;
+}
+
+/* COLLAPSIBLE */
+details summary::-webkit-details-marker {
+    display:none;
+}
+
+details > summary {display:block}
+
+/* FOOTER */
+#copyright {
+    font-size: .8em;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5em;
+}
+
+#page-header #header-internal {
+    width: max-content;
+    
+}
+
+
+/* MISC */
+
+
+
+
+
+
+
+
+
+
 

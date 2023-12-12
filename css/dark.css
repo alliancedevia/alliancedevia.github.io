@@ -1,72 +1,18 @@
-/*INVENTED LAVENDER */
-
-.dropdown-content a:hover, .dropdown-content button:hover {
-    background-color: #7b6bbe;
-}
-
-/*LIGHT LAVENDER */
-
-header, footer, .dropdown-content a, #page-header #header-internal, .slide, .button-row a {
-    background-color: #6d66ac;
 
 
-}
-
-
-/*DARK LAVENDER */
-#page-header, #carousel, .button-row {
-    background-color: #615498;
-
-}
-.glide__bullets button {
-    color: #615498;
-}
-
-.dropdown-content a, #page-header #header-internal {
-    border-top: #615498 solid 1px;
-}
-
-/* WHITE */
-.slide-button {
-    border-color: #2B2725;
-}
-body {
-    background-color: #2B2725 !important;
-}
-
-
-/*GREEN*/
-.glide__bullet--active, footer .social:hover, footer p a:hover {
-    color: #7af6c5 !important;
-}
-
-.slide-button:hover {
-    border-color: #7af6c5
-}
-
-.spacer {
-    color: #2B2725;
-}
-.after::after {
-    background-color: #AFA9CF;
-}
-
-.white-button {
-    background-color: #2B2725;
-}
-
-.glide__arrows button {
-    color: #6D66AC
-}
-
-/*BLACK*/
-.museo-header, .button-row a, .dropdown-content a, .dropdown-content button, .text, .header-link, footer .social, .slide-button, body {
-    color: #fffcf9;
+:root {
+    --white: #2B2725;
+    --lavenderhover: #7b6bbe;
+    --lavender: #6d66ac;
+    --darklavender: #615498;
+    --purple: #6d66ac;
+    --black: #fffcf9;
+    --strong: #7af6c5;
 }
 
 /*HEADER*/
 #home img {
-	content: url(/images/headerDark.webp)
+	content: url('/images/headerDark.webp')
 }
 /*HOME IMAGES*/
 #our-mission .img {
@@ -79,16 +25,4 @@ body {
 body {
     visibility: visible;
     opacity: 1;
-}
-
-@media screen and (max-width: 885px) {
-    header img {
-        background-color: #6d66ac;   
-        
-    }
-    nav {
-        background-color: #6d66ac;
-    
-    }
-    
 }

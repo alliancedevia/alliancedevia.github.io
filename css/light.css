@@ -1,79 +1,14 @@
-/*INVENTED LAVENDER */
-
-.dropdown-content a:hover, .dropdown-content button:hover {
-    background-color: #d9d4f8;
-}
-
-/*LIGHT LAVENDER */
-
-header, footer, .dropdown-content a, #page-header #header-internal, .slide, .button-row a {
-    background-color: #D1CCE1;
-
-
-}
-
-
-/*DARK LAVENDER */
-#page-header, #carousel, .button-row {
-    background-color: #AFA9CF;
-
-}
-.glide__bullets button {
-    color: #AFA9CF;
-}
-
-.dropdown-content a, #page-header #header-internal {
-    border-top: #AFA9CF solid 1px;
-}
-
-/* WHITE */
-.slide-button {
-    border-color: #FFFCF9;
-}
-body {
-    background-color: #fffcf9;
-}
-
-.glide__bullet--active {
-    color: #FFFCF9 !important;
-}
-
-.spacer {
-    color: #FFFCF9;
-}
-.after::after {
-    background: #AFA9CF;
-}
-
-.white-button {
-    background-color: #FFFCF9;
-}
-
-/*BLACK*/
-.museo-header, .button-row a, .dropdown-content a, .dropdown-content button, .text, .header-link, footer .social, .slide-button, .glide__arrows button, body {
-    color: #2B2725;
-}
-footer .social:hover, footer p a:hover {
-    color: #6d66ac
-}
-
-.slide-button:hover {
-    border-color: #6d66ac
+:root {
+    --white: #FFFCF9;
+    --lavenderhover: #d9d4f8;
+    --lavender: #D1CCE1;
+    --darklavender: #AFA9CF;
+    --purple: #6d66ac;
+    --black: #2B2725;
+    --strong: #FFFCF9;
 }
 
 body {
     visibility: visible;
     opacity: 1;
-}
-
-@media screen and (max-width: 885px) {
-    header img {
-        background-color: #D1CCE1;   
-        
-    }
-    nav {
-        background-color: #D1CCE1;
-    
-    }
-    
 }

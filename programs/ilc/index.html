@@ -4,113 +4,389 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <meta name="description" content="The INTERalliance of Greater Cincinnati is a non-profit organization dedicated to helping students explore the rich IT industry around Cincinnati. ">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="/css/ia.css">
-        <link rel="stylesheet" id="theme">
+        <link rel="stylesheet" id="theme" href="/css/light.css">
         <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 885px)">
         <link rel="stylesheet" href="/css/desktop.css" media="(min-width: 886px)">
         <title>INTERalliance Leadership Council - INTERalliance of Greater Cincinnati</title>
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+        <link as="font" rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+        <link as="font" rel="preconnect" href="https://fonts.googleapis.com">
+        <link as="font" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
     <body>
         <header>
             <a id="home" aria-label="Homepage" href="/"><img src="/images/header.webp" alt=""></a>
-            <nav id="links"></nav>
+            <nav id="links">
+                <div id="dynamic-about-us" class='dropdown'>
+                    <button onclick="dropdown('about-us')" id="about-us-header" class="header-link" href="/about-us">About Us</button>
+                    <div class="dropdown-content" id="about-us-dropdown">
+                        
+                            <a class="display-${element.display}" href="/about-us">About Us</a>
+                        
+                            <a class="display-${element.display}" href="/about-us/board">Board</a>
+                        
+                            <a class="display-${element.display}" href="/about-us/newsroom">Newsroom</a>
+                        
+                            <a class="display-${element.display}" href="/about-us/connect">Connect</a>
+                        
+                            <a class="display-${element.display}" href="https://interalliance.networkforgood.com/projects/163950-general-donation-page">Support</a>
+                        
+                            <a class="display-${element.display}" href="https://www.cincinnatiexperience.com/">Why Cincy?</a>
+                        
+                            <a class="display-${element.display}" href="http://livability.com/northern-kentucky">Why NKY?</a>
+                        
+                    </div>
+                </div>
+                <span class="spacer">|</span>
+                <div id="dynamic-programs" class='dropdown'>
+                    <button onclick="dropdown('programs')" id="programs-header" class="header-link" href="/programs">Programs</button>
+                    <div class="dropdown-content" id="programs-dropdown">
+                        
+                            <a class="display-${element.display}" href="/programs">Programs</a>
+                        
+                            <a class="display-${element.display}" href="/programs/upcoming-events">Upcoming Events</a>
+                        
+                            <a class="display-${element.display}" href="/programs/internships">INTERnships</a>
+                        
+                            <a class="display-${element.display}" href="/programs/ilc">INTERalliance Leadership Council</a>
+                        
+                            <a class="display-${element.display}" href="https://techolympics.org">TechOlympics 2024</a>
+                        
+                            <a class="display-${element.display}" href="https://wiitcincy.weebly.com/">WiIT Cincy</a>
+                        
+                    </div>
+                </div>
+                <span class="spacer">|</span>
+                <div id="dynamic-chapters" class='dropdown'>
+                    <button onclick="dropdown('chapters')" id="chapters-header" class="header-link" href="/chapters">Chapters</button>
+                    <div class="dropdown-content" id="chapters-dropdown">
+                        
+                            <a class="display-${element.display}" href="/chapters">Chapters</a>
+                        
+                            <a class="display-${element.display}" href="/chapters/competitions">Competitions</a>
+                        
+                            <a class="display-${element.display}" href="/chapters/resources">Management</a>
+                        
+                            <a class="display-${element.display}" href="https://techolympics.org/showcase-projects/">Showcase</a>
+                        
+                            <a class="display-${element.display}" href="/chapters/recognition">Recognitions</a>
+                        
+                    </div>
+                </div>
+                <span class="spacer">|</span>
+                <a class="header-link white-button" href="https://interalliance.networkforgood.com/projects/163950-general-donation-page">Donate</a>
+                
+            </nav>
         </header>
+        <main>
         <div id="page-header">
-            <div id="header-internal">
-                <h1 class="museo-header">Leadership Council</h1>
+    <div id="header-internal">
+        <h1 class="museo-header">INTERalliance Leadership Council</h1>
+    </div>
+</div>
+
+<div class="main">
+    <p>The INTERalliance Leadership Council is a group of approximately 30 select students from across the Greater Cincinnati area that work with the Central Office to create and deliver meaningful experiences for other students. From August through May, this group manages the technology, marketing, and logistics for all INTERalliance programs. INTERalliance is entirely student-run: by students, for students. Through ILC, students engage with several key INTERalliance stakeholders including company representatives, teachers, university representatives, and other partners committed to furthering the mission of INTERalliance. These students will also receive professional development training and networking opportunities for their commitment and hard work.</p>
+    <div class="two-column">
+        <img src="/images/ilc.webp" alt="">
+        <div>
+            <h2 class="museo-header">ILC Expectations</h2>
+            <ul>
+                <li>Open to incoming Freshmen – Seniors</li>
+                <li>ILC Members will be expected to work 5-10 hours a week throughout the year and roughly 10-20 hours a week during important times such as TechOlympics. During that time, we expect you to work in the office or remotely- whichever is more convenient.</li>
+                <li>Required events:</li>
+                <ol>
+                    <li>Monthly meetings on Sunday mornings (9:00 AM – 1:00 PM)</li>
+                    <li>ILC Retreat: 9/29/23 - 10/1/23</li>
+                    <li>TechOlympics: 2/17/24 - 2/18/24</li>
+                </ol>
+            </ul>
+        </div>
+    </div>
+    <details class="mobile-collapsible">
+        <summary><h2 class="museo-header section-header-2">Leadership Council Teams</h2>
+        </summary>
+        <div class="two-column">
+            <div>
+                <h3 class="museo-header section-header-3">Systems</h3>
+                <p>Responsible for maintaining the INTERalliance and TechOlympics websites, working with other committees in their technology needs, and managing the setup of technology for all programs.</p>
+            </div>
+            <div>
+                <h3 class="museo-header section-header-3">Data</h3>
+                <p>Responsible for managing and updating the data resulting from INTERalliance programs.</p>
             </div>
         </div>
-        <main class="main">
-            <p>The INTERalliance Leadership Council is a group of approximately 30 select students from across the Greater Cincinnati area that work with the Central Office to create and deliver meaningful experiences for other students. From August through May, this group manages the technology, marketing, and logistics for all INTERalliance programs. INTERalliance is entirely student-run: by students, for students. Through ILC, students engage with several key INTERalliance stakeholders including company representatives, teachers, university representatives, and other partners committed to furthering the mission of INTERalliance. These students will also receive professional development training and networking opportunities for their commitment and hard work.</p>
-            <div class="two-column">
-                <img src="/images/ilc.webp" alt="">
-                <div>
-                    <h2 class="museo-header">ILC Expectations</h2>
-                    <ul>
-                        <li>Open to incoming Freshmen – Seniors</li>
-                        <li>ILC Members will be expected to work 5-10 hours a week throughout the year and roughly 10-20 hours a week during important times such as TechOlympics. During that time, we expect you to work in the office or remotely- whichever is more convenient.</li>
-                        <li>Required events:</li>
-                        <ol>
-                            <li>Monthly meetings on Sunday mornings (9:00 AM – 1:00 PM)</li>
-                            <li>ILC Retreat: 9/29/23 – 10/1/23</li>
-                            <li>TechOlympics: 2/17/24 – 2/18/24</li>
-                        </ol>
-                    </ul>
-                </div>
+        <div class="two-column">
+            <div>
+                <h3 class="museo-header section-header-3">Programs</h3>
+                <p>Responsible for all coordination of INTERalliance events. These include Job Shadowing Events, TechOlympics, and any other new and innovative programs that are offered throughout the year. Engaging with the region’s best speakers, this team has first-hand knowledge of talent in the Cincinnati area.</p>
             </div>
-            <details class="mobile-collapsible">
-                <summary><h2 class="museo-header section-header-2">Leadership Council Teams</h2>
-                </summary>
-                <div class="two-column">
-                    <div>
-                        <h3 class="museo-header section-header-3">Systems</h3>
-                        <p>Responsible for maintaining the INTERalliance and TechOlympics websites, working with other committees in their technology needs, and managing the setup of technology for all programs.</p>
-                    </div>
-                    <div>
-                        <h3 class="museo-header section-header-3">Data</h3>
-                        <p>Responsible for managing and updating the data resulting from INTERalliance programs.</p>
-                    </div>
-                </div>
-                <div class="two-column">
-                    <div>
-                        <h3 class="museo-header section-header-3">Programs</h3>
-                        <p>Responsible for all coordination of INTERalliance events. These include Job Shadowing Events, TechOlympics, and any other new and innovative programs that are offered throughout the year. Engaging with the region’s best speakers, this team has first-hand knowledge of talent in the Cincinnati area.</p>
-                    </div>
-                    <div>
-                        <h3 class="museo-header section-header-3">Marketing</h3>
-                        <p>Responsible for the execution of professional marketing tactics, the creation of consistently branded materials, and the expansion of the organization’s overall reach. This team is looking for creative students with a passion for art and writing!</p>
-                    </div>
-                </div>
-                <div class="two-column">
-                    <div>
-                        <h3 class="museo-header section-header-3">Chapters</h3>
-                        <p>Responsible for the external INTERalliance chapters and coordination for chapter events. These events include Chapter Competitions, Showcase, specific chapter requests, and Adopt-a-Chapter.</p>
-                    </div>
-                    <div>
-                        <h3 class="museo-header section-header-3">Finance</h3>
-                        <p>Responsible for budgeting and sponsorship within the INTERalliance programs.</p>
-                    </div>
-                </div>
-            </details>
+            <div>
+                <h3 class="museo-header section-header-3">Marketing</h3>
+                <p>Responsible for the execution of professional marketing tactics, the creation of consistently branded materials, and the expansion of the organization’s overall reach. This team is looking for creative students with a passion for art and writing!</p>
+            </div>
+        </div>
+        <div class="two-column">
+            <div>
+                <h3 class="museo-header section-header-3">Chapters</h3>
+                <p>Responsible for the external INTERalliance chapters and coordination for chapter events. These events include Chapter Competitions, Showcase, specific chapter requests, and Adopt-a-Chapter.</p>
+            </div>
+            <div>
+                <h3 class="museo-header section-header-3">Finance</h3>
+                <p>Responsible for budgeting and sponsorship within the INTERalliance programs.</p>
+            </div>
+        </div>
+    </details>
+    
+    <h2 class="museo-header section-header-2">2023 ILC Banquet Recognitions</h2>
+    <div class="two-column">
+        <div>
+            <p>Executive Prescence: Andrew Heckart, Vinaya Sivakumar, Sage Bushstone</p>
             
-            <h2 class="museo-header section-header-2">2023 ILC Banquet Recognitions</h2>
-            <div class="two-column">
-                <div>
-                    <p>Executive Prescence: Andrew Heckart, Vinaya Sivakumar, Sage Bushstone</p>
-                    
-                    <p>Under Pressure: Nikhil Khambhampati, Tejas Mundhe, Vihaan Vulpala</p>
-                    
-                    <p>Rising Leader: Ashlyn Bhatt, Jeff Zhu, Ariel Fader, Suhani Prakash, Megha Gaitonde</p>
-                    
-                    <p>Positive Attitude: Robert Butler, Prathik Iyengar, Ananya Jajoo, Eva Winchester, Lillian Liu</p>
-                    
-                    <p>INTERalliance Dedication: Andrew Heckart</p>
-                    
-                    <p>Technical Excellence: Sage Bushstone, Reese Tuttle</p>
-                    
-                    <p>Team Work: Programs Team</p>
-                    
-                    <p>Innovator: Ivy Bowman, Carson Schmidt, Erik Long</p>
-                    
-                    <p>Servant Leader: Nikhil Khambhampati, Andrew Heckart</p>
-                    
-                    <p>INTERalliance Ambassador: Ashlyn Bhatt, Hana Winchester, Logan Crutchfield, Laasya Thiagarajan</p>
-                    
-                    <p>Loyal Traveler: Destiny DeShields, Bo Sileo, Sriman Nedunuri, Sanjay Shankar, Austin Choi</p>
-                    
-                    <p>Record Breakers: Finance Team, Chapters Team</p>
-                    
-                    <p>Volunteer of the Year: Jude Hoy</p>
-                </div>
-                <img src="/images/ilc2.webp" alt="">
-            </div>
-            <h2 class="museo-header section-header-2">INTERalliance C-Levels</h2>
-            <div id="clevels" class="staff-section"></div>
+            <p>Under Pressure: Nikhil Khambhampati, Tejas Mundhe, Vihaan Vulpala</p>
+            
+            <p>Rising Leader: Ashlyn Bhatt, Jeff Zhu, Ariel Fader, Suhani Prakash, Megha Gaitonde</p>
+            
+            <p>Positive Attitude: Robert Butler, Prathik Iyengar, Ananya Jajoo, Eva Winchester, Lillian Liu</p>
+            
+            <p>INTERalliance Dedication: Andrew Heckart</p>
+            
+            <p>Technical Excellence: Sage Bushstone, Reese Tuttle</p>
+            
+            <p>Team Work: Programs Team</p>
+            
+            <p>Innovator: Ivy Bowman, Carson Schmidt, Erik Long</p>
+            
+            <p>Servant Leader: Nikhil Khambhampati, Andrew Heckart</p>
+            
+            <p>INTERalliance Ambassador: Ashlyn Bhatt, Hana Winchester, Logan Crutchfield, Laasya Thiagarajan</p>
+            
+            <p>Loyal Traveler: Destiny DeShields, Bo Sileo, Sriman Nedunuri, Sanjay Shankar, Austin Choi</p>
+            
+            <p>Record Breakers: Finance Team, Chapters Team</p>
+            
+            <p>Volunteer of the Year: Jude Hoy</p>
+        </div>
+        <img src="/images/ilc2.webp" alt="">
+    </div>
+    <!--C-LEVELS-->
+    <h2 class="museo-header section-header-2">INTERalliance C-Levels</h2>
+    <div id="clevels" class="staff-section">
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/ariel.png" alt="Ariel Fader">
+            <h3>Ariel Fader</h3>
+            <p>Chief Chapters Officer</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/ashlyn.png" alt="Ashlyn Bhatt">
+            <h3>Ashlyn Bhatt</h3>
+            <p>Chief Operating Officer</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/ivy.webp" alt="Ivy Bowman">
+            <h3>Ivy Bowman</h3>
+            <p>Chief Information Officer</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/megha.webp" alt="Megha Gaitonde">
+            <h3>Megha Gaitonde</h3>
+            <p>Chief Finance Officer</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/suhani.webp" alt="Suhani Prakash">
+            <h3>Suhani Prakash</h3>
+            <p>Chief Marketing Officer</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/tejas.webp" alt="Tejas Mundhe">
+            <h3>Tejas Mundhe</h3>
+            <p>Chief Data Officer</p>
+        </div>
+        
+    </div>
+    <!--PROGRAMS TEAM-->
+    <h2 class="museo-header section-header-2">INTERalliance Programs Team</h2>
+    <div id="ilc-programs" class="staff-section">
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/jeff.webp" alt="Jeff Zhu">
+            <h3>Jeff Zhu</h3>
+            <p>Programs Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/lillian.webp" alt="Lillian Liu">
+            <h3>Lillian Liu</h3>
+            <p>Programs Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/caleb.webp" alt="Caleb Petros">
+            <h3>Caleb Petros</h3>
+            <p>Programs Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/yvette.webp" alt="Yvette Detweiler">
+            <h3>Yvette Detweiler</h3>
+            <p>Programs Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/rishi.webp" alt="Rishi Maguluri">
+            <h3>Rishi Maguluri</h3>
+            <p>Programs Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/ezana.webp" alt="Ezana Worku">
+            <h3>Ezana Worku</h3>
+            <p>Programs Team</p>
+        </div>
+        
+    </div>
+    <!--IT TEAM-->
+    <h2 class="museo-header section-header-2">INTERalliance IT Team</h2>
+    <div id="ilc-programs" class="staff-section">
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/aryan.png" alt="Aryan Vohra">
+            <h3>Aryan Vohra</h3>
+            <p>IT Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/luke.jpg" alt="Luke Macenski">
+            <h3>Luke Macenski</h3>
+            <p>IT Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/lavender.png" alt="Saathvik Bondalapati">
+            <h3>Saathvik Bondalapati</h3>
+            <p>IT Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/lavender.png" alt="TaiSean Miller">
+            <h3>TaiSean Miller</h3>
+            <p>IT Team</p>
+        </div>
+        
+    </div>
+    <!--DATA TEAM-->
+    <h2 class="museo-header section-header-2">INTERalliance Data Team</h2>
+    <div id="ilc-data" class="staff-section">
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/ananya.webp" alt="Ananya Jajoo">
+            <h3>Ananya Jajoo</h3>
+            <p>Data Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/lavender.png" alt="Dhruv Kota">
+            <h3>Dhruv Kota</h3>
+            <p>Data Team</p>
+        </div>
+        
+    </div>
+    <!--CHAPTERS TEAM-->
+    <h2 class="museo-header section-header-2">INTERalliance Chapters Team</h2>
+    <div id="ilc-chapters" class="staff-section">
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/eva.png" alt="Eva Winchester">
+            <h3>Eva Winchester</h3>
+            <p>Chapter Engagement Director</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/shanthi.png" alt="Shanthi Napier">
+            <h3>Shanthi Napier</h3>
+            <p>Chapters Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/lavender.png" alt="Nyelle Graves">
+            <h3>Nyelle Graves</h3>
+            <p>Chapters Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/abhisek.webp" alt="Abhisek Bhave">
+            <h3>Abhisek Bhave</h3>
+            <p>Chapters Team</p>
+        </div>
+        
+    </div>
+    <!--MARKETING TEAM-->
+    <h2 class="museo-header section-header-2">INTERalliance Marketing Team</h2>
+    <div id="ilc-marketing" class="staff-section">
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/sara.webp" alt="Sara Nath">
+            <h3>Sara Nath</h3>
+            <p>Social Media Director</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/erik.png" alt="Erik Long">
+            <h3>Erik Long</h3>
+            <p>Marketing Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/robel.png" alt="Robel Yoseph">
+            <h3>Robel Yoseph</h3>
+            <p>Marketing Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/estelle.png" alt="Estelle Apewokin">
+            <h3>Estelle Apewokin</h3>
+            <p>Marketing Team</p>
+        </div>
+        
+    </div>
+    <!--FINANCE TEAM-->
+    <h2 class="museo-header section-header-2">INTERalliance Finance Team</h2>
+    <div id="ilc-marketing" class="staff-section">
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/anya.png" alt="Anya Mehta">
+            <h3>Anya Mehta</h3>
+            <p>Finance Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/noah.png" alt="Noah Besera">
+            <h3>Noah Besera</h3>
+            <p>Finance Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/rohan.webp" alt="Rohan Parikh">
+            <h3>Rohan Parikh</h3>
+            <p>Finance Team</p>
+        </div>
+        
+        <div class="person-box collapse-mobile">
+            <img src="/images/ilc2324/rahul.png" alt="Rahul Velu">
+            <h3>Rahul Velu</h3>
+            <p>Finance Team</p>
+        </div>
+        
+    </div>
+
+</div>
         </main>
         <footer>
             <div id="footer-content" class="flex">
@@ -126,8 +402,5 @@
             <p class="center" id="copyright">Copyright © INTERalliance 2023 All Rights Reserved | Site developed by <a class="text" href="https://congodsted.com">Con Godsted</a> and maintained by the <a class="text" href="/programs/ilc">INTERalliance Leadership Council IT Team</a> | Based at 10290 Alliance Road, Cincinnati, OH</p>
         </footer>
         <script src="/js/index.js"></script>
-        <script src="/js/staff.js"></script>
-        <script>requestStaff("ilc")</script>
-
-    </body>
+  </body>
 </html>

@@ -82,7 +82,7 @@ async function requestIndex() {
     catch (error) {
         console.log(error, source)
     }
-    loadIndex(index)
+    //loadIndex(index)
     
 }
 
@@ -130,8 +130,8 @@ function loadIndex(index) {
 
 }
 
-//This initializes the dropdown code..
-requestIndex()
+//This initializes the dropdown code.
+//requestIndex()
 
 
 //This section of the code handles the Dark Mode popup.

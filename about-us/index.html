@@ -4,81 +4,144 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <meta name="description" content="The INTERalliance of Greater Cincinnati is a non-profit organization dedicated to helping students explore the rich IT industry around Cincinnati. ">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="/css/ia.css">
-        <link rel="stylesheet" id="theme">
+        <link rel="stylesheet" id="theme" href="/css/light.css">
         <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 885px)">
         <link rel="stylesheet" href="/css/desktop.css" media="(min-width: 886px)">
         <title>About Us - INTERalliance of Greater Cincinnati</title>
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+        <link as="font" rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+        <link as="font" rel="preconnect" href="https://fonts.googleapis.com">
+        <link as="font" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
     <body>
         <header>
-            <a id="home" href="/"><img src="/images/header.webp" alt=""></a>
-            <nav id="links"></nav>
+            <a id="home" aria-label="Homepage" href="/"><img src="/images/header.webp" alt=""></a>
+            <nav id="links">
+                <div id="dynamic-about-us" class='dropdown'>
+                    <button onclick="dropdown('about-us')" id="about-us-header" class="header-link" href="/about-us">About Us</button>
+                    <div class="dropdown-content" id="about-us-dropdown">
+                        
+                            <a class="display-${element.display}" href="/about-us">About Us</a>
+                        
+                            <a class="display-${element.display}" href="/about-us/board">Board</a>
+                        
+                            <a class="display-${element.display}" href="/about-us/newsroom">Newsroom</a>
+                        
+                            <a class="display-${element.display}" href="/about-us/connect">Connect</a>
+                        
+                            <a class="display-${element.display}" href="https://interalliance.networkforgood.com/projects/163950-general-donation-page">Support</a>
+                        
+                            <a class="display-${element.display}" href="https://www.cincinnatiexperience.com/">Why Cincy?</a>
+                        
+                            <a class="display-${element.display}" href="http://livability.com/northern-kentucky">Why NKY?</a>
+                        
+                    </div>
+                </div>
+                <span class="spacer">|</span>
+                <div id="dynamic-programs" class='dropdown'>
+                    <button onclick="dropdown('programs')" id="programs-header" class="header-link" href="/programs">Programs</button>
+                    <div class="dropdown-content" id="programs-dropdown">
+                        
+                            <a class="display-${element.display}" href="/programs">Programs</a>
+                        
+                            <a class="display-${element.display}" href="/programs/upcoming-events">Upcoming Events</a>
+                        
+                            <a class="display-${element.display}" href="/programs/internships">INTERnships</a>
+                        
+                            <a class="display-${element.display}" href="/programs/ilc">INTERalliance Leadership Council</a>
+                        
+                            <a class="display-${element.display}" href="https://techolympics.org">TechOlympics 2024</a>
+                        
+                            <a class="display-${element.display}" href="https://wiitcincy.weebly.com/">WiIT Cincy</a>
+                        
+                    </div>
+                </div>
+                <span class="spacer">|</span>
+                <div id="dynamic-chapters" class='dropdown'>
+                    <button onclick="dropdown('chapters')" id="chapters-header" class="header-link" href="/chapters">Chapters</button>
+                    <div class="dropdown-content" id="chapters-dropdown">
+                        
+                            <a class="display-${element.display}" href="/chapters">Chapters</a>
+                        
+                            <a class="display-${element.display}" href="/chapters/competitions">Competitions</a>
+                        
+                            <a class="display-${element.display}" href="/chapters/resources">Management</a>
+                        
+                            <a class="display-${element.display}" href="https://techolympics.org/showcase-projects/">Showcase</a>
+                        
+                            <a class="display-${element.display}" href="/chapters/recognition">Recognitions</a>
+                        
+                    </div>
+                </div>
+                <span class="spacer">|</span>
+                <a class="header-link white-button" href="https://interalliance.networkforgood.com/projects/163950-general-donation-page">Donate</a>
+                
+            </nav>
         </header>
+        <main>
         <div id="page-header">
-            <div id="header-internal">
-                <h1 class="museo-header">About Us</h1>
+    <div id="header-internal">
+        <h1 class="museo-header">About Us</h1>
+    </div>
+</div>
+
+<main class="main">
+    <div id="our-section">
+        <div id="our-mission" class="flex">
+            <div class="img" style="background-image: url('/images/visionlight.webp')" alt=""></div>
+            <div class="padded section-text">
+                <h2 class="museo-header font36 no-margin">Our Mission</h2>
+                
+                <p> To inspire and assist young talent to pursue an IT
+                    career in Greater Cincinnati.
+                </p>
             </div>
         </div>
-        <main class="main">
-            <div id="our-section">
-                <div id="our-mission" class="flex">
-                    <div class="img" style="background-image: url('/images/visionlight.webp')" alt=""></div>
-                    <div class="padded section-text">
-                        <h2 class="museo-header font36 no-margin">Our Mission</h2>
-                        
-                        <p> To inspire and assist young talent to pursue an IT
-                            career in Greater Cincinnati.
-                        </p>
-                    </div>
-                </div>
-                <div id="our-vision" class="flex">
-                    <div class="img" style="background-image: url('/images/missionlight.webp')" alt=""></div>
-                    <div class="padded right-align section-text">
-                        <h2 class="museo-header font36 no-margin">Our Vision</h2>
-                        
-                        <p>
-                            To dramatically grow and diversify the IT talent pipeline by designing and delivering innovative technology programs, in partnership with businesses, high schools, and universities.                            
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h2 class="museo-header">For Students</h2>
+        <div id="our-vision" class="flex">
+            <div class="img" style="background-image: url('/images/missionlight.webp')" alt=""></div>
+            <div class="padded right-align section-text">
+                <h2 class="museo-header font36 no-margin">Our Vision</h2>
+                
                 <p>
-                    The INTERalliance of Greater Cincinnati is a non-profit organization dedicated to helping you explore the rich IT industry around Cincinnati. With so many Fortune 500 Companies per capita, there are countless opportunities for bright, talented students to engage with technology, even if you’re unsure about your future career path.
+                    To dramatically grow and diversify the IT talent pipeline by designing and delivering innovative technology programs, in partnership with businesses, high schools, and universities.                            
                 </p>
-                <div class="flex">
-                    <div class="about-us right" style="background-image: url('/images/boothlight.webp')" alt=""></div>
-                    <p>
-                        Want to find a high-paying summer job? Our internship program connects you with large and small companies from around Cincinnati. Want to meet-like minded peers? TechOlympics is a fun way to connect with your peers from all over the city. Whether you’re interested in design or fascinated by cybersecurity, our vast network is dedicated to helping you succeed.
-                    </p>
-                </div>
-                <h2 class="museo-header">For Parents</h2>
-                <p>
-                    As a non-profit organization, INTERalliance is dedicated to helping your child kick-start their career opportunities and discover the exciting IT industry encompassing Cincinnati. Our internships engage Fortune 500 Companies and smaller business, always paying above minimum wage while providing life experience not taught in a classroom. TechOlympics, our biggest event of the year, is a fun way to meet peers from all over the city and explore IT career pathways. At the smaller level, our career camps take your child straight into Cincinnati’s robust technology network. Whether your child has their career path fixed or is still exploring, we want to help them succeed in any field they enter.                </p>
-                <h2 class="museo-header no-margin">For Sponsors</h2>
-                <div class="flex">
-                    <p>
-                        Find the next leaders of your IT industry. Stop recruiting outside of Cincinnati– talent is all around you. INTERalliance is devoted to retaining Cincinnati’s top talent—talent that comes from the newest generation of explorers, thinkers, and dreamers. We provide students opportunities to explore Cincinnati’s vibrant IT community through internships, and job shadowing opportunities. TechOlympics, the nation’s largest high school technology conference, brings students together to learn about career options they have right at home. By developing the future leaders of tomorrow, we provide you with talent that propels Cincinnati into a brighter, better future.
-                    </p>
-                    <img class="about-us left" src="/images/sponsorlight.webp" alt="">
-                </div>
-
-                <div class="flex">
-                    <img class="about-us left top" src="/images/teacherlight.webp" alt="">
-                    <div>
-                        <h2 class="museo-header no-margin">For Teachers</h2>
-                        <p>
-                            INTERalliance brings exciting technology opportunities to your classroom and beyond. With so many Fortune Companies per capita, there are countless opportunities for bright, talented students to interact with technology. Our internships engage Fortune 500 Companies and smaller business, adding experience to supplement the classroom. TechOlympics, our biggest event of the year, is a fun way to bring together peers from all over the city. Whether your students have their career path fixed or are still exploring, we want to help them succeed in any field they enter.
-                        </p>
-                    </div>
-                </div>
             </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="museo-header">For Students</h2>
+        <p>
+            The INTERalliance of Greater Cincinnati is a non-profit organization dedicated to helping you explore the rich IT industry around Cincinnati. With so many Fortune 500 Companies per capita, there are countless opportunities for bright, talented students to engage with technology, even if you’re unsure about your future career path.
+        </p>
+        <div class="flex">
+            <div class="about-us right" style="background-image: url('/images/boothlight.webp')" alt=""></div>
+            <p>
+                Want to find a high-paying summer job? Our internship program connects you with large and small companies from around Cincinnati. Want to meet-like minded peers? TechOlympics is a fun way to connect with your peers from all over the city. Whether you’re interested in design or fascinated by cybersecurity, our vast network is dedicated to helping you succeed.
+            </p>
+        </div>
+        <h2 class="museo-header">For Parents</h2>
+        <p>
+            As a non-profit organization, INTERalliance is dedicated to helping your child kick-start their career opportunities and discover the exciting IT industry encompassing Cincinnati. Our internships engage Fortune 500 Companies and smaller business, always paying above minimum wage while providing life experience not taught in a classroom. TechOlympics, our biggest event of the year, is a fun way to meet peers from all over the city and explore IT career pathways. At the smaller level, our career camps take your child straight into Cincinnati’s robust technology network. Whether your child has their career path fixed or is still exploring, we want to help them succeed in any field they enter.                </p>
+        <h2 class="museo-header no-margin">For Sponsors</h2>
+        <div class="flex">
+            <p>
+                Find the next leaders of your IT industry. Stop recruiting outside of Cincinnati– talent is all around you. INTERalliance is devoted to retaining Cincinnati’s top talent—talent that comes from the newest generation of explorers, thinkers, and dreamers. We provide students opportunities to explore Cincinnati’s vibrant IT community through internships, and job shadowing opportunities. TechOlympics, the nation’s largest high school technology conference, brings students together to learn about career options they have right at home. By developing the future leaders of tomorrow, we provide you with talent that propels Cincinnati into a brighter, better future.
+            </p>
+            <img class="about-us left" src="/images/sponsorlight.webp" alt="">
+        </div>
+
+        <div class="flex">
+            <img class="about-us left top" src="/images/teacherlight.webp" alt="">
+            <div>
+                <h2 class="museo-header no-margin">For Teachers</h2>
+                <p>
+                    INTERalliance brings exciting technology opportunities to your classroom and beyond. With so many Fortune Companies per capita, there are countless opportunities for bright, talented students to interact with technology. Our internships engage Fortune 500 Companies and smaller business, adding experience to supplement the classroom. TechOlympics, our biggest event of the year, is a fun way to bring together peers from all over the city. Whether your students have their career path fixed or are still exploring, we want to help them succeed in any field they enter.
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
         </main>
         <footer>
             <div id="footer-content" class="flex">
@@ -94,5 +157,5 @@
             <p class="center" id="copyright">Copyright © INTERalliance 2023 All Rights Reserved | Site developed by <a class="text" href="https://congodsted.com">Con Godsted</a> and maintained by the <a class="text" href="/programs/ilc">INTERalliance Leadership Council IT Team</a> | Based at 10290 Alliance Road, Cincinnati, OH</p>
         </footer>
         <script src="/js/index.js"></script>
-    </body>
+  </body>
 </html>

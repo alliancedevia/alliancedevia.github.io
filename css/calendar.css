@@ -40,25 +40,25 @@ div.fc-daygrid-event-harness a.fc-event {
 }
 /* FONT COLOUR   */
 .fc-h-event .fc-event-main, .fc-event-title, .fc .fc-button-primary, .fc-today-button.fc-button.fc-button-primary, .fc-event-time {
-    color: #2B2725;
+    color: var(--black);
     text-decoration-line: none !important;
     font-weight: bold;
 
 }
 /* ACTIVE FORMAT BUTTON COLOR */
 .fc-toolbar.fc-header-toolbar button.fc-button.fc-button-primary.fc-button-active {
-    background: #D1CCE1;
+    background: var(--white);
     border-radius: 0;
 }
 .fc-h-event {
     border: none;
 }
 .fc-theme-standard td{
-    border-color: #AFA9CF;
+    border-color: var(--darklavender);
     border-width: 1.5px;
 }
 .fc .fc-scrollgrid {
-    border-top-color: #AFA9CF;
+    border-top-color: var(--darklavender);
     border-top-width: 1.5px;
 }
 
@@ -74,7 +74,7 @@ th.fc-col-header-cell.fc-day {
 }
 /* BUTTON COLORATION */
 .fc-toolbar.fc-header-toolbar .fc-button:not(.fc-button-active), .fc-daygrid-event-harness {
-    background: #D1CCE1;
+    background: var(--lavender);
     border-radius: 0;
     color: #2B2725;
 }
@@ -83,7 +83,7 @@ th.fc-col-header-cell.fc-day {
 }
 
 .fc-daygrid-event-harness:hover, .fc-h-event:hover, .fc-toolbar.fc-header-toolbar .fc-button:hover {
-    background: #AFA9CF;
+    background: var(--darklavender);
 }
 
 .fc-scrollgrid-section.fc-scrollgrid-section-body.fc-scrollgrid-section-liquid td[role=presentation] {

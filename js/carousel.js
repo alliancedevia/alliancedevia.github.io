@@ -1,40 +1,29 @@
-let announcements;
-//load all dynamic content onto page
-async function requestAnnouncements() {
-    //request modpacks
-    try {
-        let connection = await fetch("/dynamic/announcements.json");
-        announcements = await connection.json();
-    }
-    catch (error) {
-        console.log(error, source)
-    }
-    loadAnnouncements(announcements)
-    
-}
-
-function loadAnnouncements(announcements) {
-    let buttonList = "";
-    for (y in announcements) {
+function loadAnnouncements() {
+    let announcements = document.querySelectorAll(".glide__slide")
+    let buttonList = `<div class="glide__bullets" data-glide-el="controls[nav]">`
+    let y = 0
+    announcements.forEach(function(element) {
         buttonList += `<button class="glide__bullet" aria-label="Go to slide ${y}" data-glide-dir="=${y}"><i class="fa fa-circle" aria-hidden="true"></i></button>`
-    }
-    for (x in announcements) {
-        document.getElementById("dynamic-slides").innerHTML += 
-            `<li class="glide__slide unskew">
-                <h1 class="museo-header">${announcements[x].title}</h1>
-                <p>${announcements[x].description}</p>
-                <a class="slide-button" href="${announcements[x].button_url}">${announcements[x].button_title}</a>
-                <div class="glide__bullets" data-glide-el="controls[nav]">
-                    ${buttonList}
+        y++
+    })
 
-                </div>
-             </li>`
-    }
+    buttonList += "</div>"
+    
+    //document.getElementById("bullets").innerHTML += buttonList
 
+    bullets = document.querySelectorAll(".glide__slide")
+    bullets.forEach(function(element) {
+        element.innerHTML += buttonList
+
+    })
 
     new Glide('.glide').mount()
 
 
 }
 
-requestAnnouncements()
+//anything that needs the page to have loaded before executing
+window.onload = function() {
+    loadAnnouncements()
+}
+
